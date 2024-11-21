@@ -1,0 +1,176 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "plugin:vue/essential",
+    "@vue/standard"
+  ],
+  "rules": {
+    "vue/valid-v-for": "error",
+    "vue/require-v-for-key": "error",
+    "vue/script-indent": [
+      "error",
+      2,
+      {
+        "baseIndent": 1
+      }
+    ],
+    "indent": 0,
+    "vue/no-use-v-if-with-v-for": [
+      "error",
+      {
+        "allowUsingIterationVar": false
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 1
+        },
+        "multiline": {
+          "max": 1
+        }
+      }
+    ],
+    "vue/order-in-components": [
+      "error",
+      {
+        "order": [
+          "el",
+          "name",
+          "parent",
+          "functional",
+          [
+            "delimiters",
+            "comments"
+          ],
+          [
+            "components",
+            "directives",
+            "filters"
+          ],
+          "extends",
+          "mixins",
+          "inheritAttrs",
+          "model",
+          [
+            "props",
+            "propsData"
+          ],
+          "data",
+          "computed",
+          "LIFECYCLE_HOOKS",
+          "methods",
+          "watch",
+          [
+            "template",
+            "render"
+          ],
+          "renderError"
+        ]
+      }
+    ],
+    "vue/no-v-html": 0,
+    "no-useless-rename": [
+      "error",
+      {
+        "ignoreDestructuring": false,
+        "ignoreImport": false,
+        "ignoreExport": false
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-extra-semi": "error",
+    "semi-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "array-callback-return": "error",
+    "block-scoped-var": "error",
+    "dot-notation": "error",
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "guard-for-in": "error",
+    "no-else-return": "error",
+    "no-empty-pattern": "error",
+    "no-eq-null": "error",
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ],
+    "brace-style": "error",
+    "camelcase": [
+      "error",
+      {
+        "properties": "never"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "func-call-spacing": [
+      "error",
+      "never"
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ]
+  },
+  "root": true
+}
