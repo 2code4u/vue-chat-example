@@ -9,5 +9,8 @@ module.exports = defineConfig({
   chainWebpack: (config) => {
     config.resolve.alias.set('@src', path.resolve(__dirname, './src'))
     config.resolve.alias.set('@api', path.resolve(__dirname, './api'))
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/vue-chat-example/'
+  : '/'
 })
