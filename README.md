@@ -1,5 +1,5 @@
-https://2code4u.github.io/vue-chat-example/
-
+# https://2code4u.github.io/vue-chat-example/
+## Практика Vue2.3; Store Pinia; Local api; Vuetify
 
 
 
